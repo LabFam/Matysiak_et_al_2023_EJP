@@ -3,7 +3,8 @@
 This repository contains codes used to create the analysis for the paper:
 Matysiak, A., Bellani, D., & Bogusz, H. (2023). Industrial Robots and Regional Fertility in European Countries. *European Journal of Population* 39(11). https://doi.org/10.1332/25151088Y2024D000000024
 
-It contains the following folders: \ 
+It contains the following folders:
+
 codes;\
 final_data;\
 generated_data;\
