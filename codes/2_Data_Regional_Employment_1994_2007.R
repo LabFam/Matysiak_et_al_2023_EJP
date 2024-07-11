@@ -1,4 +1,4 @@
-# # Copyright (c) 2022 Honorata Bogusz
+# # Copyright (c) 2023 Honorata Bogusz
 # 
 # # Permission is hereby granted, free of charge, to any person obtaining a copy
 # # of this software and associated documentation files (the "Software"), to deal
@@ -47,7 +47,7 @@ gc()
 
 ##### load the 1986-1999 file ##### 
 
-df_1 <- read_dta("../original_data/employment_1986_1999.dta")
+df_1 <- read_dta("../original_data/ESTA51546_200916_03.dta")
 df_1 <- df_1[,c("country", "region", "year", "na112d", "value")]
 df_1$r <- paste(df_1$country, df_1$region,sep="")
 df_1 <- df_1[,c("country", "r", "year", "na112d", "value")]

@@ -1,4 +1,4 @@
-# # Copyright (c) 2022 Honorata Bogusz
+# # Copyright (c) 2023 Honorata Bogusz
 # 
 # # Permission is hereby granted, free of charge, to any person obtaining a copy
 # # of this software and associated documentation files (the "Software"), to deal
@@ -103,7 +103,7 @@ rm(list=setdiff(ls(), c("list_2016", "list_2013", "list_2010")))
 
 ############### 2. RECLASSIFY 2004-2017 YEARS FOR THE EMPLOYMENT DATA FILE 2000-2017 ############### 
 
-df <- read_dta("../original_data/employment_2000_2017.dta")
+df <- read_dta("../original_data/ESTA51546_200916_02.dta")
 df <- df[,c("country", "region", "year", "na112d", "nace2d", "value")]
 df$country <- str_replace_all(df$country, "GR", "EL")
 df$r <- paste(df$country, df$region,sep="")
